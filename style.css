@@ -1,0 +1,27 @@
+body{
+    background-color: #C6A9E6;
+}
+.foto{
+    width:30%;
+}
+h1, h2{
+    font-family: 'Inter', sans-serif;
+    size: 30px;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#2a3965;
+    font-style: italic;
+
+}
+.rodape{
+    background-color: #DBADE6;
+}
+.contato, .direitos{ 
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#2a3965;
+}
