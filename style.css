@@ -1,5 +1,5 @@
 body{
-    background-color: #C6A9E6;
+    background-image: linear-gradient(to bottom, #e69797, #e2a7bf, #d4bada, #cacce5, #d0dbe6);
 }
 .foto{
     width:30%;
@@ -16,7 +16,7 @@ p{
 
 }
 .rodape{
-    background-color: #DBADE6;
+    background-image: linear-gradient(to left, #e69797, #e2a7bf, #d4bada, #cacce5, #d0dbe6);
 }
 .contato, .direitos{ 
     margin-top: 40px;
