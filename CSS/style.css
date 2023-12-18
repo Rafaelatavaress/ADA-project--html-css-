@@ -29,7 +29,7 @@ nav {
 
 .menu {
     display: flex;
-    padding-top: 50px;
+    padding-top: 15px;
     justify-content: end;
     margin-right: 20px;
 }
@@ -50,12 +50,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size-adjust: 100%;
     width: 100%;
-    height: 80px;
+    height: 38px;
     background-color: #e2a7bf;
-    margin: 50px;
+    margin: 14px;
 }
 
 ul > li {
@@ -63,14 +61,22 @@ ul > li {
     margin: 30px;
 }
 
-h1, h2{
+h1{
     font-family: 'Inter', sans-serif;
-    padding-top: 5px;
+    padding-top: 30px;
     font-size: 36px;
     font-weight: 400;
     color:  #1F0049;
     display: block;
 
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    padding-top: 60px;
+    font-size: 36px;
+    font-weight: 400;
+    color:  #1F0049;
+    display: block;
 }
 .slogan {
     font-family: 'Inter', sans-serif;
@@ -218,7 +224,63 @@ button[type="submit"] {
         margin-top: 20px;
     }
 }
-/*menu*/
+
+
+@media only screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-content,
+    nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        padding-top: 20px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    #eventos ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #eventos ul li img {
+        width: 100%;
+        aspect-ratio: auto 1 / 1;
+    }
+
+    #eventos ul li a {
+        width: 100%;
+    }
+
+    .cabecalho,
+    h2 {
+        margin: 20px 0;
+    }
+
+    .rodape {
+        padding: 20px 0;
+    }
+
+    .contato,
+    .direitos {
+        margin-top: 20px;
+    }
+}
+
+
+
 .menu-hamburguer {
     display: none;
     cursor: pointer;
