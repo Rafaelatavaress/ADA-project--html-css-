@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
@@ -22,22 +22,30 @@
                     </a>
                 </div>
                 <nav>
+                    <div class="menu-hamburguer" onclick="toggleMenu()"></div>
                     <ul class="menu">
                     <li>
-                        <a href="index.html">Homepage</a>
+                        <div><a href="index.html">Homepage</a></div>
                     </li>
                     <li>
-                        <a href="#">Formaturas</a>
+                        <div><a href="#">Formaturas</a></div>
                     </li>
                     <li>
-                        <a href="#">Datas Comemorativas</a>
+                        <div><a href="#">Datas Comemorativas</a></div>
                     </li>
                     <li>
-                        <a href="contato.html">Contato</a>
+                        <div><a href="contato.html">Contato</a></div>
                     </li>
                     </ul>
                 </nav>
                 </div>
+                <script>
+                    function toggleMenu() {
+                        var menu = document.querySelector('.menu');
+                        menu.classList.toggle('show');
+                    }
+                </script>
+                
             </header>
     </header>
     <div class="cabecalho">
