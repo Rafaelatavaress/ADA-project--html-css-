@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e2a7bf;
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #d77171;
+}
+
+header .container {
+    display: flex;
+}
+
+.logo {
+    height: 110px;
+}
+.logo-content {
+    width: 33.33%;
+}
+
+nav {
+    width: 66.67%;
+}
+
+.menu {
+    display: flex;
+    padding-top: 50px;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.menu li a{
+    color: #785f7d;
+    font-size: 25px;
+}
+
+.menu li a:hover {
+    color: #6F9F9C;
+}
+a {
+    text-decoration: none;
+}
+
+.cabecalho, h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size-adjust: 100%;
+    width: 100%;
+    height: 80px;
+    background-color: #e2a7bf;
+    margin: 50px;
+}
+
+ul > li {
+    list-style-type: none;
+    margin: 30px;
+}
+
+h1, h2{
+    font-family: 'Inter', sans-serif;
+    padding-top: 5px;
+    font-size: 36px;
+    font-weight: 400;
+    color:  #1F0049;
+    display: block;
+
+}
+.slogan {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#2a3965;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 2em; /* dobro da altura da fonte */
+    color: #1F0049;
+}
+
+#eventos ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px 0 40px 0;
+}
+#eventos ul li {
+    width: 360px;
+    min-height: 320px;
+    background-color: #d0dbe6;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+#eventos ul li h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding: 15px 15px 0 15px;
+    font-weight: 300;
+    line-height: 150%; /* com porcentagem também funciona */
+}
+
+#eventos ul li img {
+    padding: 15px;
+    width: calc(100% - 30px); /* o calc serve para fazer calculos matemáticos de valores */
+    aspect-ratio: 16/9;
+}
+
+#eventos ul li a {
+    display: block;
+    margin: 15px;
+    width: calc(100% - 30px);
+    line-height: 36px;
+    height: 36px;
+    background-color: #d77171;
+    color: #d4bada;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.rodape{
+    background-color: #d77171;
+}
+.contato, .direitos{ 
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#2a3965;
+}
+
+/*formulario*/
+
+#fname {
+    margin: 10 px 10px ;
+}
+label {
+    display: block;
+    margin: 10px 10px 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+}
+/*responsividade*/
+@media only screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-content,
+    nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        padding-top: 20px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    #eventos ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #eventos ul li img {
+        width: 100%;
+        aspect-ratio: auto 1 / 1;
+    }
+
+    #eventos ul li a {
+        width: 100%;
+    }
+
+    .cabecalho,
+    h2 {
+        margin: 20px 0;
+    }
+
+    .rodape {
+        padding: 20px 0;
+    }
+
+    .contato,
+    .direitos {
+        margin-top: 20px;
+    }
+}
+/*menu*/
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+    order: -1; /* move o menu para cima na ordem de exibição */
+}
+
+.menu-hamburguer div {
+    width: 30px;
+    height: 3px;
+    background-color: #785f7d;
+    margin: 6px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
